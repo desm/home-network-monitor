@@ -1,0 +1,91 @@
+[
+    {
+        "Id": "sha256:e7474a160a88780cf281245019580e6f5e5b74732b9777ce3b311be366c96b8c",
+        "RepoTags": [
+            "mariadb:10.6"
+        ],
+        "RepoDigests": [
+            "mariadb@sha256:1ce48e9be4be695e4e06b775aed83a4805e2fbba8e1219292c4e8bd1483a4f07"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2024-09-03T02:17:54Z",
+        "DockerVersion": "",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "3306/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "GOSU_VERSION=1.17",
+                "LANG=C.UTF-8",
+                "MARIADB_MAJOR=10.6",
+                "MARIADB_VERSION=1:10.6.19+maria~ubu2004"
+            ],
+            "Cmd": [
+                "mariadbd"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": {
+                "/var/lib/mysql": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "org.opencontainers.image.authors": "MariaDB Community",
+                "org.opencontainers.image.base.name": "docker.io/library/ubuntu:focal",
+                "org.opencontainers.image.description": "MariaDB Database for relational SQL",
+                "org.opencontainers.image.documentation": "https://hub.docker.com/_/mariadb/",
+                "org.opencontainers.image.licenses": "GPL-2.0",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.source": "https://github.com/MariaDB/mariadb-docker",
+                "org.opencontainers.image.title": "MariaDB Database",
+                "org.opencontainers.image.url": "https://github.com/MariaDB/mariadb-docker",
+                "org.opencontainers.image.vendor": "MariaDB Community",
+                "org.opencontainers.image.version": "10.6.19"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 396429592,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/f0f7be7a62ff3a53ded51a1241ab587479edeaf22cc2e3b8f3e7086ccd0b2be5/diff:/var/lib/docker/overlay2/a07d1e0a9a142547af04b151a4aebd47639ebe2c12c50cb36ea1b57358f196b5/diff:/var/lib/docker/overlay2/3bef5edad7e1fb13e45998a47f5df6e5ac34239a35994c52c435f8d397fcab06/diff:/var/lib/docker/overlay2/c89738db6fd4494aaa75173f279099025ecafff8baaf8c06fc07ab5a8308d8e9/diff:/var/lib/docker/overlay2/c5c41e6bcd70cb34c93746c72ff5dcc24a26d77d3128986e8eff823fa569f50d/diff:/var/lib/docker/overlay2/b5e223fe07c617678a2054a80444f17b7cb3baa2a16bea1f473a065a7858d5c3/diff:/var/lib/docker/overlay2/d88c99dcc9b6327c8b59789f42986e222098f57ace406673160e1bd3c2effba4/diff",
+                "MergedDir": "/var/lib/docker/overlay2/e5bd66622168694609aabdf3b779a63fe37c36df9dfbd62fea58d19d12c4f35d/merged",
+                "UpperDir": "/var/lib/docker/overlay2/e5bd66622168694609aabdf3b779a63fe37c36df9dfbd62fea58d19d12c4f35d/diff",
+                "WorkDir": "/var/lib/docker/overlay2/e5bd66622168694609aabdf3b779a63fe37c36df9dfbd62fea58d19d12c4f35d/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:3ec3ded77c0ce89e931f92aed086b2a2c774a6fbd51617853decc8afa4e1087a",
+                "sha256:ab2ef5b59d12aeeb1fc1715f1ccf5d7b6b9eed54b52234ec67bc1b61b7b85abc",
+                "sha256:ad9b8fa13bd3a75d62b1884bc35eefcfed83feb1045b71b3f04417f99a66f3d6",
+                "sha256:893ca3b599448d417fd098b2c04a70538d6e6b1b6e4e821851174a61f5704cc1",
+                "sha256:857940606efe29fe2c943957363977994e110bbdc8984c6b5747b0ec84a704bb",
+                "sha256:2adffd38481380ec5f25e76fa572709577ed15767d06b55df6c7dfb2a777ed35",
+                "sha256:41dbdf7864842402e7bfd3b6a0d4ce202f7af074a1ddccb80c815e6a3e383ba0",
+                "sha256:af1cbb75daa78336e3b0f08e7a50a923d7a5a9fb1011e25fa5adc1a58b13da6a"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
