@@ -1,0 +1,20 @@
+~ traceroute 8.8.8.8
+traceroute to 8.8.8.8 (8.8.8.8), 64 hops max, 52 byte packets
+ 1  www.routerlogin.com (192.168.0.1)  4.540 ms  5.758 ms  8.470 ms
+ 2  lp98.core.rtr.storm.ca (209.87.239.232)  32.092 ms  30.349 ms  32.577 ms
+ 3  port-channel2.switch4.tor2.he.net (216.66.41.113)  30.371 ms  31.877 ms  41.116 ms
+ 4  port-channel12.core2.tor1.he.net (184.104.189.86)  33.191 ms
+    port-channel10.core1.tor2.he.net (184.104.189.104)  34.783 ms  27.694 ms
+ 5  as15169.toronto.megaport.com (206.53.203.14)  33.969 ms
+    port-channel12.core2.tor1.he.net (184.104.189.86)  30.408 ms
+    google.ip4.torontointernetxchange.net (206.108.34.6)  33.414 ms
+ 6  192.178.98.119 (192.178.98.119)  30.108 ms
+    google.ip4.torontointernetxchange.net (206.108.34.6)  24.529 ms
+    192.178.98.119 (192.178.98.119)  32.613 ms
+ 7  192.178.98.189 (192.178.98.189)  32.199 ms
+    192.178.99.37 (192.178.99.37)  48.740 ms
+    216.239.50.119 (216.239.50.119)  35.354 ms
+ 8  dns.google (8.8.8.8)  36.712 ms
+    216.239.41.175 (216.239.41.175)  56.575 ms
+    216.239.49.189 (216.239.49.189)  34.167 ms
+
