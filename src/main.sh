@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
 
-function install_ping() {
-  apt update
-  apt install -y inetutils-ping
-}
-
 function create_my_cnf_file() {
   cat <<EOD > ~/.my.cnf
 [client]
@@ -57,7 +52,6 @@ function do_ping_every_minute() {
 }
 
 function main() {
-  install_ping
   create_my_cnf_file
   create_database_if_not_exists
   do_ping_every_minute

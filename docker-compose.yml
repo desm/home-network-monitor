@@ -1,15 +1,18 @@
 services:
   app:
-    image: mariadb:10.6
+    build:
+      context: .
     environment:
       - MYSQL_ROOT_PASSWORD=password
     ports:
-      - 5306:3306
+      - "7506:3306"
     restart: always
     volumes:
       - db_data:/var/lib/mysql
+      - ./src/entrypoint.sh:/root/entrypoint.sh
       - ./src/main.sh:/root/main.sh
     working_dir: /root
+    entrypoint: /root/entrypoint.sh
 
 volumes:
   db_data:

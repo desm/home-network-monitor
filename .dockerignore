@@ -1,4 +1,4 @@
 *
 *.*
-
-!src/main.sh
+!./src/entrypoint.sh
+!./src/main.sh
